@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "nested"
+  "defaultProject": "nested",
+  "cli": {
+    "analytics": false
+  }
 }
