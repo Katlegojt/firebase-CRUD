@@ -11,10 +11,10 @@
         <input formControlName="venue" placeholder="venue">
        <p><label>start</label><input type="date" formControlName="start" placeholder="Start date"></p>
        <p><label>end</label><input type="date" formControlName="end" placeholder="end date"></p>
-       <button type="submit" mdbBtn color="primary" mdbWavesEffect >Add Event</button>
+       <button type="submit" mdbBtn color="primary" mdbWavesEffect (click)="modalRef.hide()"  >Add Event</button>
     </form>
   </div>
   <div class="modal-footer">
     <button type="button" mdbBtn color="secondary" class="waves-light" aria-label="Close" (click)="modalRef.hide()" mdbWavesEffect>Close</button>
-    <button mdbBtn color="primary" class="relative waves-light" mdbWavesEffect>Save!</button>
+   
   </div>
