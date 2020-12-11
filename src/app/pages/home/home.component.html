@@ -1,0 +1,22 @@
+<div>
+    <h1>Events</h1>
+    <p>{{title}}</p>
+  
+  
+</div>
+
+
+<div>
+    <div *ngFor="let item of dataList">
+        <hr>
+        <p><strong>Title</strong>: {{item.title}}</p>
+        <p><strong>Venue</strong>: {{item.meta.venue}}</p>
+        <p><strong>Description</strong>: {{item.meta.description}}</p>
+        <p><img src="{{item.meta.image}}" style="width: 25%; height:25%;"></p>
+        <hr>
+    </div>
+ <div>
+    <button type="button" mdbBtn color="primary" mdbWavesEffect (click)="openModal()">Add Event</button>
+ </div>
+</div>
+
